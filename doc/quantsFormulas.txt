@@ -1,0 +1,8 @@
+Black Schols Formula -> 
+    - Assumption: Constant volatility, no dividends, frictionless markets 
+        (no fees), continuous trading, and normal distribution of returns (Geometric Brownian 
+        Motion)
+    - What it does: calculates the theoretical price of European options
+    - what it can be used for: finding an edge on the market an over time should pay off 
+        (like casino)
+
