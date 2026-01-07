@@ -6,3 +6,15 @@ Black Schols Formula ->
     - what it can be used for: finding an edge on the market an over time should pay off 
         (like casino)
 
+
+Kamlan Filter ->
+    - Assumption: System is (approximately) linear and uncertainty is Gaussian. You specify:
+	    a state transition model (how the hidden thing evolves),
+	    a measurement model (how your data observes that hidden thing),
+	    noise levels Q (process noise) and R (measurement noise).
+	- What it does: Produces the best (minimum MSE) estimate of an unobserved state x_t from noisy observations y_t, updating each step via predict → update.
+	- What it can be used for:
+	    Time-varying beta/alpha estimation (dynamic regression) instead of rolling windows
+	    Signal extraction (separating “true” price/factor from microstructure noise)
+	    Term structure / yield curve factors (level/slope/curvature as latent states)
+	    Tracking spreads in pairs trading / statistical arbitrage as a latent mean
